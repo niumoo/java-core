@@ -5,7 +5,7 @@ package com.wdbyte;
  * @date 2021/07/21
  */
 public class Dog {
-    private String id;
+
     private String name;
     private Integer age;
 
@@ -20,13 +20,6 @@ public class Dog {
         this.name = name;
         this.age = age;
     }
-
-    public Dog(String id, String name, Integer age) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-    }
-
 
     public String getName() {
         return name;
@@ -44,18 +37,9 @@ public class Dog {
         this.age = age;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
     @Override
     public String toString() {
         return "Dog{" +
-            "id='" + id + '\'' +
             ", name='" + name + '\'' +
             ", age=" + age +
             '}';
